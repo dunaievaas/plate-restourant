@@ -1,0 +1,222 @@
+.footer {
+    background-color: $bg-second-color;
+    padding-top: 80px;
+}
+
+.wrapper-top {
+
+    &::after {
+        content: '';
+        display: block;
+        height: 0.5px;
+        width: 100%;
+        background-color: $font-second-color;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+
+    &__logo {
+        @media screen and (max-width: 992px) {
+            padding-bottom: 30px;
+        }
+    }
+
+    h3 {
+        padding-bottom: 15px;
+    }
+}
+
+.contact-info {
+
+    &__adress {
+        max-width: 184px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+            padding-block: 10px;
+        }
+    }
+
+    &__phone {
+        max-width: 184px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+            padding-block: 10px;
+        }
+    }
+
+    &__social-title {
+        @media screen and (max-width: 768px) {
+            padding-top: 10px;
+        }
+    }
+}
+
+.adress {
+    &__wrapper {
+        display: flex;
+        gap: 15px;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+
+        a {
+            color: $font-second-color;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $font-first-color;
+            }
+        }
+    }
+}
+
+.phone {
+    &__wrapper {
+        display: flex;
+        gap: 15px;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+
+        a {
+            text-align: right;
+            color: $font-second-color;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $font-first-color;
+            }
+        }
+    }
+}
+
+.networks {
+
+    &__item {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: $font-second-color;
+            transition: color 0.3s ease-in-out;
+
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
+
+            &:hover {
+                color: $font-first-color;
+            }
+
+            .fa-brands {
+                width: 15px;
+            }
+        }
+    }
+}
+
+.wrapper-bottom {
+    padding-block: 20px;
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.menu {
+
+    &__footer {
+        display: flex;
+        justify-content: end;
+        gap: 45px;
+
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+
+        li {
+            position: relative;
+
+            &:first-child::after {
+                content: '|';
+                position: absolute;
+                padding-left: 22.5px;
+            }
+        }
+    }
+}
+
+.wrapper-bottom {
+    color: $font-second-color;
+}
+
+.menu {
+    li {
+        a {
+            color: $font-second-color;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $font-first-color;
+            }
+        }
+    }
+}
+
+.to-top {
+    background-color: $golden-color;
+    position: fixed;
+    z-index: 998;
+    bottom: 16px;
+    right: 32px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    color: $bg-main-color;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        span {
+            display: none;
+        }
+    }
+}
+
+.active {
+    bottom: 32px;
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.not-found {
+    padding-top: 118px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 65px;
+    }
+}

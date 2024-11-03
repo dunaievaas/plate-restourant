@@ -1,0 +1,17 @@
+//colors
+$bg-main-color: #000000;
+$bg-second-color: #1A1A1B;
+$font-first-color: #FFFFFF;
+$font-second-color: #BDBDBD;
+$form-border-color: #333333;
+$golden-color: #F8A44E;
+$btn-color: $golden-color;
+//fonts
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-name: 'Poppins';
+$main-font: $default-font-name, $fallback;
+
+//font size
+$main-size-font: 12px;
+$menu-size-font: 16px;
+$btn-size-font: 13px;

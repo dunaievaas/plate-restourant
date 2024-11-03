@@ -1,0 +1,40 @@
+.benefits {
+
+    background-color: $bg-second-color;
+
+    &>img {
+        width: 100%;
+    }
+
+    &__wrapper {
+        padding-block: 100px;
+
+        @media screen and (max-width: 992px) {
+            padding-block: 80px;
+        }
+    }
+}
+
+
+
+.wrapper {
+
+    &__box {
+        text-align: center;
+
+        @media screen and (max-width: 992px) {
+            padding: 20px;
+        }
+    }
+}
+
+.box {
+
+    &__title {
+        padding-block: 40px 10px;
+    }
+
+    &__text {
+        color: $font-second-color;
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import './reset';
+@import './variables';
+@import './global';
+@import './header.scss';
+@import './sections/hero';
+@import './sections/popular-dishes';
+@import './sections/about';
+@import './sections/gallery';
+@import './sections/working-hours';
+@import './sections/benefits';
+@import './sections/faq';
+@import './sections/testimonials';
+@import './sections/contact';
+@import './footer.scss';

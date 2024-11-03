@@ -1,0 +1,158 @@
+.testimonials {
+    padding-block: 190px 64px;
+    background-color: $bg-second-color;
+
+    @media screen and (max-width: 992px) {
+        padding-block: 80px 32px;
+    }
+}
+
+.testimonials-wrapper {
+    position: relative;
+
+    &__title {
+        padding-block: 14px 16px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 2px;
+            height: 40px;
+            background-color: #fff;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &>p {
+        max-width: 856px;
+        margin: 0 auto;
+        text-align: center;
+        color: $font-second-color;
+    }
+
+    .list {
+        .slick-slide {
+            padding: 25px;
+        }
+
+        &__box {
+            background-color: $bg-main-color;
+            padding: 40px 20px;
+        }
+    }
+
+    .box {
+
+        &__info-author {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        &__testimonial {
+            position: relative;
+            padding-top: 60px;
+
+            @media screen and (max-width: 1400px) {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 5;
+                white-space: pre-wrap;
+            }
+
+            &::before {
+                content: url('../../assets/images/quotes.svg');
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .info-author {
+
+        &__name {
+            color: $font-second-color;
+        }
+    }
+
+    .slick-dotted.slick-slider {
+        padding-top: 20px;
+    }
+
+    .slick-list {
+        padding-bottom: 15px;
+    }
+
+    .slider-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slick-prev,
+        .slick-next {
+            position: relative;
+            top: 0;
+            transform: translateY(0);
+            width: auto;
+
+            &::before {
+                font-family: 'FontAwesome';
+            }
+        }
+
+        .slick-prev {
+            &::before {
+                content: '\f053';
+
+            }
+        }
+
+        .slick-next {
+            &::before {
+                content: '\f054';
+            }
+        }
+
+        .slick-dots {
+            position: relative;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+
+            li {
+                margin: 0 15px;
+                width: auto;
+                height: auto;
+
+                button {
+                    width: auto;
+                    height: auto;
+
+                    &::before {
+                        width: 10px;
+                        height: 10px;
+                        background-color: $font-second-color;
+                        color: transparent;
+                        opacity: 1;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        &::before {
+                            background-color: $golden-color;
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

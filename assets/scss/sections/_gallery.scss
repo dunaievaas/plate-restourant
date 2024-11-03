@@ -1,0 +1,45 @@
+.gallery {
+
+    &__list {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+
+        @media screen and (max-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.list {
+
+    &__item {
+        grid-row: 1 / 3;
+        height: max-content;
+
+        &:nth-of-type(3) {
+            grid-row: 1 / 2;
+        }
+
+        &:last-of-type {
+            grid-row: 2 / 3;
+        }
+
+        @media screen and (max-width: 992px) {
+            height: 100%;
+
+            &:nth-of-type(3) {
+                grid-row: auto
+            }
+
+            &:last-of-type {
+                grid-row: auto
+            }
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

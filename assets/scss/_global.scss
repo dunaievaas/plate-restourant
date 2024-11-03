@@ -1,0 +1,102 @@
+body {
+    background-color: $bg-main-color;
+    font-family: $main-font, $fallback;
+    font-weight: 400;
+    color: $font-first-color;
+    font-size: 18px;
+    line-height: 1.6;
+
+    @media screen and (max-width: 992px) {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 1664px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $font-first-color;
+}
+
+h1 {
+    font-size: 4.7vw;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    color: $font-first-color;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 90px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 49px;
+    letter-spacing: 9.2px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    color: $font-first-color;
+
+    @media screen and (max-width: 992px) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 5.2px;
+    text-transform: uppercase;
+    color: $font-first-color;
+
+    @media screen and (max-width: 992px) {
+        font-size: 20px;
+    }
+}
+
+.button-reserve {
+    padding: 10px 60px;
+    font-weight: 500;
+    border: 2px solid $btn-color;
+    background-color: $golden-color;
+    color: $bg-main-color;
+    transition: all .5s ease;
+    display: inline-block;
+    margin-top: 60px;
+
+    &:hover {
+        background-color: transparent;
+        color: $btn-color;
+        border: 2px solid $btn-color;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+.mobile-only {
+    @media screen and (min-width: 993px) {
+        display: none;
+    }
+}
+
+.desctop-only {
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}

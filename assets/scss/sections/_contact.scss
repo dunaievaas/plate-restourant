@@ -1,0 +1,113 @@
+.contact {
+    padding-block: 150px 180px;
+
+    @media screen and (max-width: 992px) {
+        padding-block: 75px 60px;
+    }
+
+    &-wrapper {
+        align-items: center;
+        justify-content: space-between;
+
+        &__form {
+
+            .gform_wrapper {
+                form {
+
+                    h2 {
+                        text-align: center;
+                        padding-bottom: 40px;
+                    }
+
+                    .gform_fields {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 14px;
+                        padding-bottom: 40px;
+                    }
+
+                    label {
+                        display: none;
+                    }
+
+                    input,
+                    textarea,
+                    select {
+                        width: 100%;
+                        background-color: $bg-main-color;
+                        padding-left: 14px;
+                        border: 2px solid $form-border-color;
+                        caret-color: $font-first-color;
+                        color: $font-first-color;
+
+                        &:focus {
+                            box-shadow: unset;
+                            border: 2px solid $font-first-color;
+                        }
+
+                        &::placeholder {
+                            color: $font-second-color;
+                            transition: color 0.3s ease-in-out;
+                        }
+
+                        &:focus::placeholder {
+                            color: transparent;
+                        }
+                    }
+
+                    select {
+                        color: $font-second-color;
+                    }
+
+                    .ginput_container.ginput_container_date {
+                        position: relative;
+                    }
+
+                    .gfield--input-type-datepicker.gfield--datepicker-default-icon .ginput_container_date {
+                        &::after {
+                            position: absolute;
+                            left: 100%;
+                            top: 50%;
+                            transform: translate(-100%, -50%);
+                            color: $font-second-color;
+                        }
+                    }
+
+                    textarea {
+                        max-height: 120px;
+                    }
+
+                    .gform_footer {
+                        margin-block-start: 0;
+
+                        input[type=submit].gform_button.button {
+                            background-color: $golden-color;
+                            color: $bg-main-color;
+                            font-weight: 500;
+                            margin-block-start: unset;
+                            transition: all 0.5s ease-in-out;
+                            border: none;
+                            border-radius: 0;
+                            width: 100%;
+
+                            &:hover {
+                                background-color: transparent;
+                                color: #F8A44E;
+                                border: 2px solid #F8A44E;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__map {
+
+            iframe {
+                max-width: 100%;
+                width: 100%;
+                max-height: 627px;
+            }
+        }
+    }
+}

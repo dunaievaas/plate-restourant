@@ -1,0 +1,61 @@
+.hero {
+    padding-block: 118px;
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 40px;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+        padding-block: 100px 30px;
+        margin-bottom: 0;
+    }
+
+    &__wrapper {
+        align-items: center;
+        height: 100%;
+    }
+
+    &__wrapper--left {
+        flex-direction: column;
+        color: $font-second-color;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+
+        .button-reserve {
+            padding: 10px 60px;
+            border: 2px solid $btn-color;
+            background-color: $bg-main-color;
+            color: $btn-color;
+            transition: background-color .5s ease;
+            font-weight: 500;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 30px;
+            }
+
+            &:hover {
+                background-color: $btn-color;
+                color: $bg-main-color;
+            }
+        }
+    }
+
+    &__wrapper--right {
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+
+            @media screen and (max-width: 992px) {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
